@@ -10,6 +10,7 @@ import (
 func main() {
 	myUrl := "http://localhost:2000/post"
 
+	// JSON payload
 	requestbody := strings.NewReader(`{"Name": "Varun", "Age": "25"}`)
 
 	resp, err := http.Post(myUrl, "application/json", requestbody)
